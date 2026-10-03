@@ -1,0 +1,732 @@
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.hero-container div {
+    font-family: "Satoshi Light", "Satoshi Light Placeholder", sans-serif;
+    font-size: 144px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 136.8px;
+    letter-spacing: -1px;
+    color: #DAC5A7;
+    z-index: 1000;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    height: 90vh;
+    width: auto;
+    max-width: 100%;
+
+    object-fit: contain;
+    object-position: top center;
+
+    filter: grayscale(70%) brightness(75%) contrast(110%);
+
+    -webkit-mask-image: radial-gradient(circle at 50% 40%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 80%);
+    mask-image: radial-gradient(circle at 50% 40%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 80%);
+}
+
+.IntoPersonal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 140vh;
+    margin-top: -750px;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    animation: TextUp 0.8s ease-out forwards;
+}
+
+@keyframes TextUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.IntoPersonal .Text {
+    position: absolute;
+    top: 60%;
+}
+
+.IntoPersonal .Text h2 {
+    text-align: center;
+    font-family: "Satoshi Light", "Satoshi Light Placeholder", sans-serif;
+    font-size: 128px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 140.8px;
+    letter-spacing: normal;
+    color: #DAC5A7;
+}
+
+.IntoPersonal .Text p {
+    font-family: "Chillax Light", "Chillax Light Placeholder", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 33px;
+    letter-spacing: normal;
+    color: #DAC5A7;
+    text-align: center;
+}
+
+.IntoPersonal .Services {
+    position: absolute;
+    left: 46%;
+    top: 90%;
+}
+
+.IntoPersonal .Services p {
+    font-family: "Satoshi Regular", "Satoshi Regular Placeholder", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 15.6px;
+    letter-spacing: 1.5px;
+    color: #DAC5A7;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.IntoPersonal .Services p .icon {
+    background-color: #23211E;
+    padding: 5px;
+    margin-right: 12px;
+    font-family: sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #DAC5A7;
+    border: solid #ffffff20 1px;
+    border-radius: 50%;
+    transition: 0.4s ease;
+}
+
+.IntoPersonal .Services p:hover .icon {
+    border-color: #ffffff7e;
+}
+
+.Card {
+    color: #fff;
+    max-width: 1400px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.Card .EachCard {
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #181716;
+    padding: 40px 30px;
+    border: solid #ffffff20 1px;
+}
+
+.Card .EachCard span {
+    font-family: "Satoshi Regular", "Satoshi Regular Placeholder", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 15.6px;
+    letter-spacing: 1.5px;
+    color: #DAC5A7;
+    text-transform: uppercase;
+}
+
+.Card .EachCard h2 {
+    font-family: "Satoshi Light", "Satoshi Light Placeholder", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 31.2px;
+    letter-spacing: 1px;
+    color: #DAC5A7;
+    text-transform: uppercase;
+}
+
+.Card .EachCard p {
+    font-family: "Chillax Light", "Chillax Light Placeholder", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 25.6px;
+    letter-spacing: normal;
+    color: #DAC5A7;
+    cursor: pointer;
+}
+
+.Card .EachCard p .icon {
+    padding: 8px;
+    border: solid #ffffff41 1px;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-family: sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #DAC5A7;
+    transition: 0.5s ease;
+}
+
+.Card .EachCard p:hover .icon {
+    transform: rotate(45deg);
+}
+
+.imageCard {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 1400px;
+    margin: 50px auto;
+}
+
+.imageCard .HeadImage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.imageCard .HeadImage h2 {
+    font-family: "Satoshi Light", "Satoshi Light Placeholder", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 48px;
+    letter-spacing: 1px;
+    color: #DAC5A7;
+}
+
+.imageCard .HeadImage p {
+    font-family: "Satoshi Regular", "Satoshi Regular Placeholder", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 15.6px;
+    letter-spacing: 1.5px;
+    color: #DAC5A7;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.imageCard .HeadImage p .icon {
+    padding: 8px;
+    border: solid #ffffff41 1px;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-family: sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #DAC5A7;
+    transition: 0.5s ease;
+}
+
+.imageCard .HeadImage p:hover .icon {
+    transform: rotate(45deg);
+}
+
+.imageCard .EachCardImage {
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.imageCard .EachCardImage .oneImage {
+    position: relative;
+    cursor: pointer;
+}
+
+.imageCard .EachCardImage .oneImage img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.imageCard .EachCardImage .oneImage .IntroImage {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    width: 80%;
+    background: linear-gradient(to right,
+            #3b3228 0%,
+            #1d1914 25%,
+            #110f0d 50%,
+            #4a4034 65%,
+            #1a1713 80%,
+            #13100d 100%);
+}
+
+.imageCard .EachCardImage .oneImage .IntroImage h2 {
+    font-family: "Satoshi Light", "Satoshi Light Placeholder", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 31.2px;
+    letter-spacing: normal;
+    color: #DAC5A7;
+}
+
+.imageCard .EachCardImage .oneImage .IntroImage p {
+    font-family: "Satoshi Regular", "Satoshi Regular Placeholder", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 15.6px;
+    letter-spacing: 1.5px;
+    color: #DAC5A7;
+    text-transform: uppercase;
+}
+
+.imageCard .EachCardImage .oneImage .iconCenter {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    border: solid #ffffff41 1px;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-family: sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #DAC5A7;
+    transition: 0.5s ease;
+    display: none;
+    animation: trans 0.99s;
+    opacity: 0.8;
+}
+
+@keyframes trans {
+    to {
+        transform: rotate(0deg);
+    }
+
+    from {
+        transform: rotate(45deg);
+    }
+}
+
+.imageCard .EachCardImage .oneImage:hover .iconCenter {
+    display: block;
+}
+
+.process {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 50px;
+    color: #fff;
+    flex-direction: column;
+    max-width: 1400px;
+    margin: 100px auto;
+}
+
+.process .HeadProcess {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.process .HeadProcess h3 {
+    font-family: "Satoshi Regular", "Satoshi Regular Placeholder", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 15.6px;
+    letter-spacing: 1.5px;
+    color: #DAC5A7;
+    text-transform: uppercase;
+}
+
+.process .HeadProcess h1 {
+    font-family: "Satoshi Light", "Satoshi Light Placeholder", sans-serif;
+    font-size: 96px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 105.6px;
+    letter-spacing: normal;
+    color: #DAC5A7;
+}
+
+.process .HeadProcess p {
+    font-family: "Chillax Light", "Chillax Light Placeholder", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 32px;
+    letter-spacing: normal;
+    color: #DAC5A7;
+}
+
+
+
+.process .FiveSteps {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    position: relative;
+}
+
+.process .FiveSteps .CardProcessLeft {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 50%;
+    height: 300vh;
+}
+
+.process .FiveSteps .CardProcessLeft .OneCard:first-child {
+    border: none;
+    background-color: #000;
+    height: 20vh;
+}
+
+.process .FiveSteps .CardProcessLeft .OneCard:nth-child(3) {
+    border: none;
+    background-color: #000;
+    height: 0vh;
+}
+
+.process .FiveSteps .CardProcessLeft .OneCard {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #181716;
+    border: solid #ffffff2f 1px;
+    padding: 25px;
+    position: relative;
+    height: 60vh;
+}
+
+.process .FiveSteps .CardProcessLeft .OneCard button {
+    font-family: "Satoshi Regular", "Satoshi Regular Placeholder", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 12px;
+    letter-spacing: 1prgba(255, 255, 255, 0.125);
+    color: #DAC5A7;
+    text-transform: uppercase;
+    padding: 7px 6px;
+    border: solid #ffffff2c 1px;
+    width: 15%;
+    position: absolute;
+    left: 74%;
+}
+
+.process .FiveSteps .CardProcessLeft .OneCard h3 {
+    margin-top: 25px;
+    font-family: "Satoshi Regular", "Satoshi Regular Placeholder", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 15.6px;
+    letter-spacing: 1.5px;
+    color: #DAC5A7;
+    text-transform: uppercase;
+}
+
+.process .FiveSteps .CardProcessLeft .OneCard h1 {
+    font-family: "Satoshi Light", "Satoshi Light Placeholder", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 31.2px;
+    letter-spacing: 1px;
+    color: #DAC5A7;
+    text-transform: uppercase;
+}
+
+.process .FiveSteps .CardProcessLeft .OneCard p {
+    font-family: "Chillax Light", "Chillax Light Placeholder", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 25.6px;
+    letter-spacing: normal;
+    color: #DAC5A7;
+}
+
+.process .FiveSteps .CardProcessLeft .OneCard ul {
+    list-style: initial;
+    margin-left: 10px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.process .FiveSteps .CardProcessLeft .OneCard ul li {
+    font-family: "Chillax Light", "Chillax Light Placeholder", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 25.6px;
+    letter-spacing: normal;
+    color: #DAC5A7;
+}
+
+
+.FiveSteps .hrcenter {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 10000;
+}
+
+.FiveSteps .hrcenter span {
+    padding: 15px;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #DAC5A7;
+    border: solid #ffffff33 1px;
+    border-radius: 50%;
+    display: block;
+}
+
+.FiveSteps .hrcenter span:last-child {
+    margin-bottom: 150px;
+}
+
+.FiveSteps .hrcenter span:not(:first-child):after {
+    content: " ";
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    height: 356vh;
+    width: 2px;
+    background-color: #3c3a3a30;
+    z-index: -1000;
+}
+
+
+
+
+
+.FiveSteps .CardProcessRight {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 50%;
+    height: 360vh;
+}
+
+.process .FiveSteps .CardProcessRight .OneCard:nth-child(2) {
+    height: 20vh;
+    border: none;
+    background-color: #000;
+}
+
+.process .FiveSteps .CardProcessRight .OneCard:nth-child(4) {
+    height: 10vh;
+    border: none;
+    background-color: #000;
+}
+
+.process .FiveSteps .CardProcessRight .OneCard {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #181716;
+    border: solid #ffffff2f 1px;
+    padding: 25px;
+    position: relative;
+    height: 60vh;
+}
+
+.process .FiveSteps .CardProcessRight .OneCard button {
+    font-family: "Satoshi Regular", "Satoshi Regular Placeholder", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 12px;
+    letter-spacing: 1prgba(255, 255, 255, 0.125);
+    color: #DAC5A7;
+    text-transform: uppercase;
+    padding: 7px 6px;
+    border: solid #ffffff2c 1px;
+    width: 15%;
+    position: absolute;
+    left: 74%;
+}
+
+.process .FiveSteps .CardProcessRight .OneCard h3 {
+    margin-top: 25px;
+    font-family: "Satoshi Regular", "Satoshi Regular Placeholder", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 15.6px;
+    letter-spacing: 1.5px;
+    color: #DAC5A7;
+    text-transform: uppercase;
+}
+
+.process .FiveSteps .CardProcessRight .OneCard h1 {
+    font-family: "Satoshi Light", "Satoshi Light Placeholder", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 31.2px;
+    letter-spacing: 1px;
+    color: #DAC5A7;
+    text-transform: uppercase;
+}
+
+.process .FiveSteps .CardProcessRight .OneCard p {
+    font-family: "Chillax Light", "Chillax Light Placeholder", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 25.6px;
+    letter-spacing: normal;
+    color: #DAC5A7;
+}
+
+.process .FiveSteps .CardProcessRight .OneCard ul {
+    list-style: initial;
+    margin-left: 10px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.process .FiveSteps .CardProcessRight .OneCard ul li {
+    font-family: "Chillax Light", "Chillax Light Placeholder", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 25.6px;
+    letter-spacing: normal;
+    color: #DAC5A7;
+}
+
+.About {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.About .web {
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 48px;
+    letter-spacing: 1px;
+    color: #DAC5A7;
+}
+
+.About .Parg {
+    width: 75%;
+}
+
+.About .Parg p {
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 28.8px;
+    letter-spacing: 1.5px;
+    color: #DAC5A7;
+}
+
+.animation {
+    display: flex;
+    overflow: hidden;
+    margin-top: 10%;
+    width: 100%;
+    height: 7vh;
+    background-color: #22201F;
+}
+
+.animation-track {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    animation: continuo 20s linear infinite;
+    will-change: transform;
+}
+
+.animation span {
+    font-family: "Satoshi Regular", "Satoshi Regular Placeholder", sans-serif;
+    font-size: 13px;
+    width: 10%;
+    flex-shrink: 0;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 15.6px;
+    letter-spacing: 1.5px;
+    color: #DAC5A7;
+    text-transform: uppercase;
+}
+
+@keyframes continuo {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}

@@ -1,0 +1,195 @@
+.content {
+    margin: 25px auto;
+}
+
+.introservices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 100vh;
+}
+
+.introservices p {
+    font-family: "Satoshi Light", "Satoshi Light Placeholder", sans-serif;
+    font-size: 128px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 140.8px;
+    letter-spacing: normal;
+    color: #DAC5A7;
+    text-align: center;
+}
+
+.introservices p:nth-child(3) {
+    font-family: "Chillax Light", "Chillax Light Placeholder", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 33px;
+    letter-spacing: normal;
+    color: #DAC5A7;
+    text-align: center;
+    width: 40%;
+}
+
+.introservices h2 {
+    font-family: "Satoshi Regular", "Satoshi Regular Placeholder", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 15.6px;
+    letter-spacing: 1.5px;
+    color: #DAC5A7;
+    text-transform: uppercase;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.introservices h2 .icon {
+    padding: 10px;
+    border: solid #ffffff22 1px;
+    margin-right: 15px;
+    border-radius: 50%;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #DAC5A7;
+    transition: 0.5s ease;
+}
+
+.introservices h2:hover .icon {
+    border-color: #fff;
+}
+
+.buttomImage {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttomImage .oneButtom {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: column;
+
+}
+
+.buttomImage .oneButtom h3 {
+    font-family: "Satoshi Regular", "Satoshi Regular Placeholder", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 15.6px;
+    letter-spacing: 1.5px;
+    color: #DAC5A7;
+    text-transform: uppercase;
+}
+
+.buttomImage .oneButtom h1 {
+    font-family: "Satoshi Light", "Satoshi Light Placeholder", sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 70.4px;
+    letter-spacing: 1px;
+    color: #DAC5A7;
+}
+
+.srvicesCard {
+    max-width: 1300px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.srvicesCard .EachCard {
+    height: max-content;
+    background-color: #181716;
+    color: #fff;
+}
+
+.srvicesCard .EachCard .innercard {
+    max-width: 1100px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.srvicesCard .EachCard .innercard h2 {
+    font-family: "Satoshi Regular", "Satoshi Regular Placeholder", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 15.6px;
+    letter-spacing: 1.5px;
+    color: #DAC5A7;
+    text-transform: uppercase;
+}
+
+.srvicesCard .EachCard .innercard p {
+    font-family: "Satoshi Light", "Satoshi Light Placeholder", sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 70.4px;
+    letter-spacing: 1px;
+    color: #DAC5A7;
+}
+
+.srvicesCard .EachCard .innercard .buttomcard {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.srvicesCard .EachCard .innercard .buttomcard div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.srvicesCard .EachCard .innercard .buttomcard div h2 {
+    font-family: "Satoshi Regular", "Satoshi Regular Placeholder", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 15.6px;
+    letter-spacing: 1.5px;
+    color: #DAC5A7;
+    text-transform: uppercase;
+}
+
+.srvicesCard .EachCard .innercard .buttomcard div p {
+    font-family: "Chillax Light", "Chillax Light Placeholder", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 25.6px;
+    letter-spacing: normal;
+    color: #DAC5A7;
+    width: 70%;
+}
+
+.srvicesCard .EachCard .innercard .buttomcard div:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff3a;
+}

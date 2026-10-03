@@ -1,0 +1,30 @@
+.nav ul li {
+    position: relative;
+}
+
+.nav ul li:not(:first-child):not(:last-child):after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ac9f8d;
+    height: 1px;
+    width: 75%;
+    transition: 0.4s ease;
+    animation: ButtomNav 0.9s;
+    display: none;
+}
+
+@keyframes ButtomNav {
+    0% {
+        width: 0%;
+    }
+
+    75% {
+        width: 75%;
+    }
+}
+
+.nav ul li:not(:first-child):not(:last-child):hover::after {
+    display: block !important;
+}

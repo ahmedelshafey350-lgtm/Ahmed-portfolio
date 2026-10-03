@@ -1,0 +1,35 @@
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px auto;
+}
+
+.content .headWork {
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.content .headWork h2 {
+    font-family: "Satoshi Light", "Satoshi Light Placeholder", sans-serif;
+    font-size: 96px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 105.6px;
+    letter-spacing: normal;
+    color: #DAC5A7;
+}
+
+.content .headWork p {
+    font-family: "Chillax Light", "Chillax Light Placeholder", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 32px;
+    letter-spacing: normal;
+    color: #DAC5A7;
+}
